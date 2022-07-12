@@ -1,0 +1,13 @@
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh">
+    <div class="card" style="min-width: 400px">
+        <div class="card-body">
+            <h1 class="mb-2">Create Posts</h1>
+            {{> alert}}
+            <form action="/posts/create" method="post">
+                <input class="form-control mb-3" type="text" name="title" placeholder="Enter Tile">
+                <textarea name="content" cols="30" rows="10" class="form-control mb-3" placeholder="Write content here"></textarea>
+                <button class="btn btn-primary d-block w-100">Create Post</button>
+            </form>
+        </div>
+    </div>
+</div>

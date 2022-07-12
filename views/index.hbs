@@ -1,0 +1,24 @@
+<div class="container-fluid p-5 bg-light">
+    <h1>Welcome to Blogitor</h1>
+    <p>Learn Web Development from Blogoto</p>
+    <a class="btn btn-primary" href="#">Start Now</a>
+</div>
+
+<div class="container-fluid px-5">
+    <section>
+    <h3 class="my-5">Recent Posts</h3>
+    {{> alert}}
+    {{#each posts}}
+    <article class="card mb-4" style="max-width: 500px;">
+        <div class="card-body">
+            <h4>{{title}}</h4>
+            <p>{{content}}</p>
+            <a href="#">Like</a>
+            <a href="#">Comment</a>
+        </div>
+    </article>
+    {{/each}}
+
+    
+</section>
+</div>
